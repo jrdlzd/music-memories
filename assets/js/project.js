@@ -8,7 +8,6 @@ const urlParams = new URLSearchParams(window.location.search);
     console.log("Project ID: ", projectId);
 
     // fetch music project from supabase
-    //const project = projects.find(p => p.id === parseInt(projectId)); //old fetch from projects.js
 
     const { data: project, error } = await supabase
         .from('projects')
@@ -18,7 +17,6 @@ const urlParams = new URLSearchParams(window.location.search);
     
     if(error) {
         console.error("Error fetching project: ", error);
-        //return;
     }
 
     if(project) {

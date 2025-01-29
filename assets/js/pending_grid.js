@@ -29,7 +29,6 @@ function displayPendingProjects(projects) {
     projects.forEach(project => {
         const projectBox = document.createElement('a')
         projectBox.className = 'pending-box';
-        //if(project.link)    projectBox.href = project.spotify_link;
         projectBox.target = '_blank';
         projectBox.innerHTML = `
             <h2>${project.name}</h2>
