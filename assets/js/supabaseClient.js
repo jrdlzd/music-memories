@@ -4,7 +4,7 @@ import { createClient } from 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js
 
 //fetches supabase key from server
 async function getSupabaseConfig() {
-    const response = await fetch('http://localhost:3000/api/supabase-config');
+    const response = await fetch('https://music-memories-production.up.railway.app/api/supabase-config');
     const config = await response.json();
     return config;
 }

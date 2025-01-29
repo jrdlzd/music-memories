@@ -9,7 +9,7 @@ let filteredProjects = [];
 //fetch spotify access token
 async function fetchAccessToken() {
     try {
-        const response = await fetch('http://localhost:3000/api/get-spotify-token');
+        const response = await fetch('https://music-memories-production.up.railway.app/api/get-spotify-token');
         const data = await response.json();
         return data.access_token;
     }
