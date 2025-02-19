@@ -56,7 +56,3 @@ app.get('/api/supabase-config', (req, res) => {
         SUPABASE_ANON_KEY: process.env.SUPABASE_ANON_KEY || 'default-key',
     });
 });
-
-app.listen(PORT, () => {
-    console.log(`Server is running on http://localhost:${PORT}`);
-})
