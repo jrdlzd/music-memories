@@ -1,6 +1,7 @@
 # Music Memories
 A website used from Bootstrap template "Selecao" utilizing front-end languages HTML, CSS, and JavaScript.
 Added backend components such as Node.js, Express.js, Spotify Web API, and Supabase.
+Deployed using Netlify and Railway.
 All projects are in a database in Supabase. Makes API calls to Supabase to fetch the projects and calls to Spotify API to fetch album artworks.
 I want to try to update this page monthly according to the pending projects page.
 
